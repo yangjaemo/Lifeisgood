@@ -19,11 +19,11 @@ import org.json.JSONObject
 import java.util.*
 
 class RegisterActivity : AppCompatActivity() {
-    internal lateinit var editTextUsername: EditText
-    internal lateinit var editTextEmail: EditText
-    internal lateinit var editTextPassword: EditText
-    internal lateinit var radioGroupGender: RadioGroup
-    internal lateinit var progressBar: ProgressBar
+    private lateinit var editTextUsername: EditText
+    private lateinit var editTextEmail: EditText
+    private lateinit var editTextPassword: EditText
+    private lateinit var radioGroupGender: RadioGroup
+    private lateinit var progressBar: ProgressBar
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)

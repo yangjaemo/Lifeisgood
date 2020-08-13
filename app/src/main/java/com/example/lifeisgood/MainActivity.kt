@@ -11,11 +11,11 @@ import com.example.lifeisgood.R
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
 
-    internal lateinit var id: TextView
-    internal lateinit var userName: TextView
-    internal lateinit var userEmail: TextView
-    internal lateinit var gender: TextView
-    internal lateinit var btnLogout: Button
+    private lateinit var id: TextView
+    private lateinit var userName: TextView
+    private lateinit var userEmail: TextView
+    private lateinit var gender: TextView
+    private lateinit var btnLogout: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
