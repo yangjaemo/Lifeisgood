@@ -10,7 +10,6 @@ import com.android.volley.AuthFailureError
 import com.android.volley.Request
 import com.android.volley.Response
 import com.android.volley.toolbox.StringRequest
-import com.example.lifeisgood.R
 import com.example.lifeisgood.User
 import com.example.lifeisgood.VolleySingleton
 import kotlinx.android.synthetic.main.activity_register.*
@@ -24,6 +23,7 @@ class RegisterActivity : AppCompatActivity() {
     private lateinit var editTextPassword: EditText
     private lateinit var radioGroupGender: RadioGroup
     private lateinit var progressBar: ProgressBar
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
@@ -59,7 +59,8 @@ class RegisterActivity : AppCompatActivity() {
         val email = editTextEmail.text.toString().trim { it <= ' ' }
         val password = editTextPassword.text.toString().trim { it <= ' ' }
 
-        val gender = (findViewById<View>(radioGroupGender.checkedRadioButtonId) as RadioButton).text.toString()
+        val gender =
+            (findViewById<View>(radioGroupGender.checkedRadioButtonId) as RadioButton).text.toString()
 
         //first we will do the validations
         if (TextUtils.isEmpty(username)) {
@@ -95,7 +96,11 @@ class RegisterActivity : AppCompatActivity() {
                     val obj = JSONObject(response)
                     //if no error in response
                     if (!obj.getBoolean("error")) {
-                        Toast.makeText(applicationContext, obj.getString("message"), Toast.LENGTH_SHORT).show()
+                        Toast.makeText(
+                            applicationContext,
+                            obj.getString("message"),
+                            Toast.LENGTH_SHORT
+                        ).show()
 
                         //getting the user from the response
                         val userJson = obj.getJSONObject("user")
@@ -115,13 +120,23 @@ class RegisterActivity : AppCompatActivity() {
                         finish()
                         startActivity(Intent(applicationContext, MainActivity::class.java))
                     } else {
-                        Toast.makeText(applicationContext, obj.getString("message"), Toast.LENGTH_SHORT).show()
+                        Toast.makeText(
+                            applicationContext,
+                            obj.getString("message"),
+                            Toast.LENGTH_SHORT
+                        ).show()
                     }
                 } catch (e: JSONException) {
                     e.printStackTrace()
                 }
             },
-            Response.ErrorListener { error -> Toast.makeText(applicationContext, error.message, Toast.LENGTH_SHORT).show() }) {
+            Response.ErrorListener { error ->
+                Toast.makeText(
+                    applicationContext,
+                    error.message,
+                    Toast.LENGTH_SHORT
+                ).show()
+            }) {
             @Throws(AuthFailureError::class)
             override fun getParams(): Map<String, String> {
                 val params = HashMap<String, String>()

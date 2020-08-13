@@ -107,6 +107,6 @@
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:visibility="gone"
-        tools:ignore="MissingConstraints" />
+            tools:ignore="MissingConstraints" />
 
-</>
+</androidx.constraintlayout.widget.ConstraintLayout>
