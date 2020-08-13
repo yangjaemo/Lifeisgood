@@ -22,9 +22,9 @@ import org.json.JSONObject
 import java.util.*
 
 class LoginActivity : AppCompatActivity() {
-    internal lateinit var etName: EditText
-    internal lateinit var etPassword: EditText
-    internal lateinit var progressBar: ProgressBar
+    private lateinit var etName: EditText
+    private lateinit var etPassword: EditText
+    private lateinit var progressBar: ProgressBar
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
