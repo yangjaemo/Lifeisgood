@@ -2,7 +2,7 @@ package com.example.lifeisgood
 
 import android.content.Context
 import android.content.Intent
-import com.example.lifeisgood.User
+
 
 class SharedPrefManager private constructor(context: Context) {
 
