@@ -10,7 +10,6 @@ import com.android.volley.AuthFailureError
 import com.android.volley.Request
 import com.android.volley.Response
 import com.android.volley.toolbox.StringRequest
-
 import kotlinx.android.synthetic.main.activity_register.*
 import org.json.JSONException
 import org.json.JSONObject
