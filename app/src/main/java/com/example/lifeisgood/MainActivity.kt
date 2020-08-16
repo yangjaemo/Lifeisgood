@@ -6,7 +6,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import com.kakao.sdk.common.util.Utility
+//import com.kakao.sdk.common.util.Utility
 
 
 //import android.content.pm.PackageManager
@@ -17,7 +17,7 @@ import com.kakao.sdk.common.util.Utility
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
 
-    var keyHash = Utility.getKeyHash(this)
+//    var keyHash = Utility.getKeyHash(this)
     private lateinit var id: TextView
     private lateinit var userName: TextView
     private lateinit var userEmail: TextView
