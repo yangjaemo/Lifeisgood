@@ -75,7 +75,11 @@ class LoginActivity : AppCompatActivity() {
 
                     //if no error in response
                     if (!obj.getBoolean("error")) {
-                        Toast.makeText(applicationContext, obj.getString("message"), Toast.LENGTH_SHORT).show()
+                        Toast.makeText(
+                            applicationContext,
+                            obj.getString("message"),
+                            Toast.LENGTH_SHORT
+                        ).show()
 
                         //getting the user from the response
                         val userJson = obj.getJSONObject("user")
@@ -94,13 +98,23 @@ class LoginActivity : AppCompatActivity() {
                         finish()
                         startActivity(Intent(applicationContext, MainActivity::class.java))
                     } else {
-                        Toast.makeText(applicationContext, obj.getString("message"), Toast.LENGTH_SHORT).show()
+                        Toast.makeText(
+                            applicationContext,
+                            obj.getString("message"),
+                            Toast.LENGTH_SHORT
+                        ).show()
                     }
                 } catch (e: JSONException) {
                     e.printStackTrace()
                 }
             },
-            Response.ErrorListener { error -> Toast.makeText(applicationContext, error.message, Toast.LENGTH_SHORT).show() }) {
+            Response.ErrorListener { error ->
+                Toast.makeText(
+                    applicationContext,
+                    error.message,
+                    Toast.LENGTH_SHORT
+                ).show()
+            }) {
             @Throws(AuthFailureError::class)
             override fun getParams(): Map<String, String> {
                 val params = HashMap<String, String>()
