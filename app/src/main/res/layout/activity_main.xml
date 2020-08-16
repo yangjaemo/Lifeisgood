@@ -24,7 +24,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Welcome to Profile"
+                android:text="프로필 확인"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
 
         <TableLayout
@@ -39,7 +39,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:padding="10dp"
-                        android:text="Id"
+                        android:text="ID"
                         android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
 
                 <TextView
@@ -58,7 +58,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:padding="10dp"
-                        android:text="Username"
+                        android:text="이름"
                         android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
 
                 <TextView
@@ -77,7 +77,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:padding="10dp"
-                        android:text="Email"
+                        android:text="이메일"
                         android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
 
                 <TextView
@@ -104,7 +104,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:padding="10dp"
-                        android:text="gender"
+                        android:text="성별"
                         android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
 
             </TableRow>
@@ -118,7 +118,7 @@
                 android:layout_height="50dp"
                 android:layout_marginLeft="75dp"
                 android:layout_marginTop="150dp"
-                android:text="Logout" />
+                android:text="로그아웃" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,7 +10,6 @@
         android:value="@string/kakao_app_key" />
 
     <application
-
         android:launchMode="singleTop"
         android:windowSoftInputMode="adjustResize"
         android:allowBackup="true"
