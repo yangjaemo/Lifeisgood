@@ -26,11 +26,11 @@ android {
     compileOptions {
         sourceCompatibility kotlin_version
         targetCompatibility kotlin_version
-        sourceCompatibility JavaVersion.VERSION_1_8
-        argetCompatibility JavaVersion.VERSION_1_8
-        kotlinOptions {
-            jvmTarget = "1.8"
-        }
+//        sourceCompatibility JavaVersion.VERSION_1_8
+//        argetCompatibility JavaVersion.VERSION_1_8
+//        kotlinOptions {
+//            jvmTarget = "1.8"
+//        }
     }
 }
 
@@ -44,10 +44,10 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     implementation 'com.android.volley:volley:1.1.1'
-    implementation group: project.KAKAO_SDK_GROUP, name: 'usermgmt', version: project.KAKAO_SDK_VERSION
-    implementation "com.kakao.sdk:v2-user:2.0.0"
-    implementation "com.kakao.sdk:v2-talk:2.0.0"
-    implementation "com.kakao.sdk:v2-story:2.0.0"
-    implementation "com.kakao.sdk:v2-link:2.0.0"
-    implementation "com.kakao.sdk:v2-navi:2.0.0"
+//    implementation group: project.KAKAO_SDK_GROUP, name: 'usermgmt', version: project.KAKAO_SDK_VERSION
+//    implementation "com.kakao.sdk:v2-user:2.0.0"
+//    implementation "com.kakao.sdk:v2-talk:2.0.0"
+//    implementation "com.kakao.sdk:v2-story:2.0.0"
+//    implementation "com.kakao.sdk:v2-link:2.0.0"
+//    implementation "com.kakao.sdk:v2-navi:2.0.0"
 }
