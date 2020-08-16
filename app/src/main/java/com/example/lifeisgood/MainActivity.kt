@@ -7,6 +7,12 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
+//import android.content.pm.PackageManager
+//import android.util.Base64
+//import android.util.Log
+//import androidx.annotation.RequiresApi
+//import java.security.MessageDigest
+
 class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     private lateinit var id: TextView
@@ -19,6 +25,20 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
 
         setContentView(R.layout.activity_main)
+//        try {
+//            val info = packageManager.getPackageInfo(
+//                "com.example.lifeisgood",
+//                PackageManager.GET_SIGNATURES)
+//            for (signature in info.signatures) {
+//                val md = MessageDigest.getInstance("SHA")
+//                md.update(signature.toByteArray())
+//                Log.e("KeyHash:", Base64.encodeToString(md.digest(), Base64.DEFAULT))
+//            }
+//        } catch (e: PackageManager.NameNotFoundException) {
+//
+//        } catch (e: NoSuchAlgorithmException) {
+//
+//        }
         if (SharedPrefManager.getInstance(this).isLoggedIn) {
             id = findViewById(R.id.textViewId)
             userName = findViewById(R.id.textViewUsername)
