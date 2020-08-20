@@ -7,8 +7,6 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 //import com.kakao.sdk.common.util.Utility
-
-
 //import android.content.pm.PackageManager
 //import android.util.Base64
 //import android.util.Log

@@ -1,5 +1,4 @@
 package com.example.lifeisgood
-
 import android.content.Intent
 import android.os.Bundle
 import android.text.TextUtils
