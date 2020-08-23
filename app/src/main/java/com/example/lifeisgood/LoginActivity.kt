@@ -122,7 +122,6 @@ class LoginActivity : AppCompatActivity() {
                 return params
             }
         }
-
         VolleySingleton.getInstance(this).addToRequestQueue(stringRequest)
     }
 }

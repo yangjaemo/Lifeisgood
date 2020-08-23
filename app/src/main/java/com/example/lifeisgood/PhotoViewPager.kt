@@ -44,7 +44,7 @@
 //                    viewPager.setCurrentItem(index, false)
 //                    check = true
 //                }
-//                subimg!!.setImageResource(0)    // 애니메이션
+//                subimg!!.setImageResource(0)
 //                tb.visibility = View.VISIBLE
 //                bt.visibility = View.VISIBLE
 //            }
@@ -81,7 +81,7 @@
 //            photoList = intent.getSerializableExtra("photo_list") as ArrayList<thumbnailData>
 //        }
 //        else {
-//            Toast.makeText(this, "전달된 이름이 없습니다", Toast.LENGTH_SHORT).show()
+//            Toast.makeText(this, "이름이 없습니다", Toast.LENGTH_SHORT).show()
 //        }
 //    }
 //}

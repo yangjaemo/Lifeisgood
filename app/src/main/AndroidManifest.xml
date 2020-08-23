@@ -3,7 +3,8 @@
 <!--    <meta-data-->
 <!--        android:name="com.kakao.sdk.AppKey"-->
 <!--        android:value="@string/KAKAO_APP_KEY" />-->
-
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
     <application
         android:launchMode="singleTop"
         android:windowSoftInputMode="adjustResize"
@@ -32,6 +33,5 @@
 <!--        </activity>-->
 <!--        -->
     </application>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.INTERNET" />
+
 </manifest>

@@ -15,13 +15,11 @@
 //    private var padding_size = 200
 //
 //    inner class Holder(itemView: View?, itemClick: (thumbnailData, Int) -> Unit) : RecyclerView.ViewHolder(itemView!!) {
-//        //thumbnail_imgview 변수 받아오기
 //
 //        var thumbnail: ImageView = itemView!!.findViewById<ImageView>(R.id.thumbnail_img)
 //        var text = itemView?.findViewById<TextView>(R.id.thumbnail_img_text)
 //
 //        fun bind(data : thumbnailData, num: Int) {
-//            //photo_view의 내부 값 설정
 //            val layoutParam = thumbnail.layoutParams as ViewGroup.MarginLayoutParams
 //            thumbnail.layoutParams.width = size
 //            thumbnail.layoutParams.height = size
