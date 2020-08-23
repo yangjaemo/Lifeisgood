@@ -6,6 +6,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+
 //import com.kakao.sdk.common.util.Utility
 //import android.content.pm.PackageManager
 //import android.util.Base64
@@ -24,8 +25,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         setContentView(R.layout.activity_main)
+
+        val intent = Intent(this, loadingActivity::class.java)
+        startActivity(intent)
+
 //        try {
 //            val info = packageManager.getPackageInfo(
 //                "com.example.lifeisgood",
@@ -68,4 +72,5 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             SharedPrefManager.getInstance(applicationContext).logout()
         }
     }
+
 }
